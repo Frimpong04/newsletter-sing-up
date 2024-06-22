@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign Up page</title>
+    <link rel="icon" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <!-- main container for the form -->
+    <div class="signup-container">
+        <div class="text-container">
+            <h1>Stay Updated!</h1>
+            <p class="subheading">Join 60,000+ product managers receiving monthly updates on:</p>
+            <!-- <ul>
+                <li>Product discovery and building what matters</li>
+                <li>Measuring to ensure updates are a success</li>
+                <li>And much more!</li>
+            </ul> -->
+
+            <div class="list-container">
+                <div class="list-item">
+                    <img src="./assets/images/icon-list.svg" alt="">
+                    <p>Product discovery and building what matters</p>
+                </div>
+
+                <div class="list-item">
+                    <img src="./assets/images/icon-list.svg" alt="">
+                    <p>Measuring to ensure updates are a success</p>
+                </div>
+
+                <div class="list-item">
+                    <img src="./assets/images/icon-list.svg" alt="">
+                    <p>And much more</p>
+                </div>
+            </div>
+            <form action="">
+                <label for="email">Email address  <span class="error-message">Valid email required</span></label>
+                <input type="email" name="email" id="email" aria-required="true" required placeholder="as@loremcompany.com">
+                <input type="submit" value="Subscribe to monthly newsletter">
+            </form>
+        </div>
+        <div class="image-container">
+            <!-- <img src="./assets/images/illustration-sign-up-desktop.svg" alt="hero image"> -->
+        </div>
+        
+        
+    </div>
+
+    <!-- success container -->
+    <div class="success-message-container">
+        <img src="./assets/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing</h1>
+        <p>A confirmation email has been sent to
+            <span id="email-span">ash@loremcompany.com.</span> Please open it and click the button inside to confirm your subscription.
+        </p>
+        <button class="dismiss-message-button">Dismiss message</button>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
