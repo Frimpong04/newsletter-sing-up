@@ -28,8 +28,17 @@ form.addEventListener("submit", (e) => {
         popupMessage.classList.add("show");
         console.log(popupMessage);
         emailInput.textContent = "";
-    }else {
+    } else {
         errorMessage.style.visibility = "visible";
+        emailInput.classList.add("error-state");
+        // submitButton.style.backgroundColor = "gray";
+        submitButton.classList.add("error-active");
+
+        emailInput.addEventListener("focus", () => {
+            errorMessage.style.visibility = "hidden";
+            emailInput.classList.remove("error-state")
+            submitButton.classList.remove("error-active");
+        })
     }
 
     console.log("submit");
