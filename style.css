@@ -66,15 +66,15 @@ body {
 .list-item {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     /* border: 1px solid yellow; */
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     margin-bottom: 1rem;
 }
 
 .list-item p {
     font-family: text;
-    font-size:1.1rem;
+    font-size:1rem;
 }
 
 /* image conatinet and image styles */
