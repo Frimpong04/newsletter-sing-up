@@ -18,6 +18,8 @@ const form = document.getElementById("form");
 // dismiss button
 const dismissButton = document.getElementById("dismiss-button");
 
+// signup container
+// const signupContainer = document.querySelector(".signup-container");
 
 // event listener
 form.addEventListener("submit", (e) => {
@@ -28,6 +30,8 @@ form.addEventListener("submit", (e) => {
         popupMessage.classList.add("show");
         console.log(popupMessage);
         emailInput.textContent = "";
+        emailInput.value="";
+
     } else {
         errorMessage.style.visibility = "visible";
         emailInput.classList.add("error-state");
