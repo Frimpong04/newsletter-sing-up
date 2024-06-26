@@ -223,8 +223,13 @@ input[type="submit"]:hover {
     box-shadow: rgba(254, 117, 82, 0.3) 0px 19px 38px, rgba(255, 84, 118, 0.22) 0px 15px 12px;
 }
 
+@media screen and (max-width: 576px) {
+    .signup-container {
+        width: 90%;
+    }
+}
 
-@media screen and (max-width: 628px) {
+@media screen and (max-width: 375px) {
     
     .signup-container {
         width: 100%;
@@ -290,23 +295,4 @@ input[type="submit"]:hover {
 }
 
 
-/* @media screen and (max-width: 388px) {
-
-    .signup-container {
-        margin-top: 50%;
-    }
-
-    .success-message-container.show {
-        width: 95%;
-        height: calc(100vh + 40vh);
-    }
-
-    .success-content {
-        width: 80%;
-    }
-
-    .success-content h1 {
-        font-size: 3.5rem;
-    }
-} */
 
